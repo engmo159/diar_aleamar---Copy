@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server'
 
-const baseUrl = 'https://diar-aleamar.vercel.app'
+const baseUrl = 'https://diar-construction.vercel.app'
 
 const staticPages = [
   { path: '/', changefreq: 'daily', priority: '1' },

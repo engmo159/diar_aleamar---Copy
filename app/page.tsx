@@ -25,10 +25,10 @@ export const metadata: Metadata = {
     images:
       'https://res.cloudinary.com/dqj1vjrxu/image/upload/f_auto,q_auto/khn0dbra3ghhotdrqp6t',
     siteName: 'شركة ديار الإعمار',
-    url: 'https://diar-aleamar.vercel.app/',
+    url: 'https://diar-construction.vercel.app',
   },
   alternates: {
-    canonical: `https://diar-aleamar.vercel.app/`,
+    canonical: `https://diar-construction.vercel.app`,
   },
 }
 
@@ -44,7 +44,7 @@ const Home = () => {
               '@context': 'https://schema.org',
               '@type': 'Organization',
               name: 'شركة ديار الإعمار',
-              url: 'https://diar-aleamar.vercel.app/',
+              url: 'https://diar-construction.vercel.app/',
               logo: 'https://res.cloudinary.com/dqj1vjrxu/image/upload/f_auto,q_auto/khn0dbra3ghhotdrqp6t',
               sameAs: [
                 'https://twitter.com/diar_aleamar',

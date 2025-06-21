@@ -31,12 +31,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       service.field === 'engineering' ? 'مقاولات' : 'خدمات رقمية',
     ],
     alternates: {
-      canonical: `https://diar-aleamar.vercel.app/services/${slug}`,
+      canonical: `https://diar-construction.vercel.app/services/${slug}`,
     },
     openGraph: {
       title: `${service.title} | شركة ديار الإعمار`,
       description: service.description,
-      url: `https://diar-aleamar.vercel.app/services/${slug}`,
+      url: `https://diar-construction.vercel.app/services/${slug}`,
       siteName: 'شركة ديار الإعمار',
       type: 'website',
       locale: 'ar_SA',
@@ -171,13 +171,13 @@ const ServicePage = async ({ params }: Props) => {
             provider: {
               '@type': 'Organization',
               name: 'شركة ديار الإعمار',
-              url: 'https://diar-aleamar.vercel.app',
+              url: 'https://diar-construction.vercel.app',
             },
             areaServed: {
               '@type': 'Place',
               name: 'المملكة العربية السعودية',
             },
-            mainEntityOfPage: `https://diar-aleamar.vercel.app/services/${service.slug}`,
+            mainEntityOfPage: `https://diar-construction.vercel.app/services/${service.slug}`,
           }),
         }}
       />

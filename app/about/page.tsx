@@ -18,13 +18,13 @@ export const metadata: Metadata = {
     'شركة إنشاءات',
   ],
   alternates: {
-    canonical: 'https://diar-aleamar.vercel.app/about',
+    canonical: 'https://diar-construction.vercel.app/about',
   },
   openGraph: {
     title: 'من نحن | شركة ديار الإعمار',
     description:
       'تعرف على شركة ديار الإعمار العالمية للمقاولات العامة - رؤيتنا، رسالتنا، وقيمنا.',
-    url: 'https://diar-aleamar.vercel.app/about',
+    url: 'https://diar-construction.vercel.app/about',
     siteName: 'شركة ديار الإعمار',
     type: 'website',
     locale: 'ar_SA',
@@ -180,7 +180,7 @@ const AboutPage = () => {
             name: 'شركة ديار الإعمار العالمية للمقاولات',
             description:
               'شركة رائدة في مجال المقاولات العامة والبناء في المملكة العربية السعودية',
-            url: 'https://diar-aleamar.vercel.app/about',
+            url: 'https://diar-construction.vercel.app/about',
             logo: 'https://res.cloudinary.com/dqj1vjrxu/image/upload/f_auto,q_auto/khn0dbra3ghhotdrqp6t',
             foundingDate: '1999',
             address: {

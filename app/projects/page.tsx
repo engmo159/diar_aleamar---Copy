@@ -17,13 +17,13 @@ export const metadata: Metadata = {
     'إنشاءات',
   ],
   alternates: {
-    canonical: 'https://diar-aleamar.vercel.app/projects',
+    canonical: 'https://diar-construction.vercel.app/projects',
   },
   openGraph: {
     title: 'مشاريعنا | شركة ديار الإعمار',
     description:
       'اكتشف مجموعة متنوعة من مشاريع البناء التي قمنا بتنفيذها في المملكة العربية السعودية، من المشاريع السكنية إلى التجارية والصناعية.',
-    url: 'https://diar-aleamar.vercel.app/projects',
+    url: 'https://diar-construction.vercel.app/projects',
     siteName: 'شركة ديار الإعمار',
     type: 'website',
     locale: 'ar_SA',
@@ -72,7 +72,7 @@ const Projects = () => {
                   project.description ||
                   `مشروع ${project.category} من شركة ديار الإعمار`,
                 image: project.image,
-                url: `https://diar-aleamar.vercel.app${project.link}`,
+                url: `https://diar-construction.vercel.app${project.link}`,
                 location: project.location,
                 client: project.client,
                 completionDate: project.completionDate,

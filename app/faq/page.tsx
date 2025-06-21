@@ -14,13 +14,13 @@ export const metadata: Metadata = {
     'استفسارات',
   ],
   alternates: {
-    canonical: 'https://diar-aleamar.vercel.app/faq',
+    canonical: 'https://diar-construction.vercel.app/faq',
   },
   openGraph: {
     title: 'الأسئلة الشائعة | شركة ديار الإعمار',
     description:
       'إجابات على الأسئلة الشائعة حول خدماتنا في مجال المقاولات والبناء. تعرف على المزيد عن شركة ديار الإعمار.',
-    url: 'https://diar-aleamar.vercel.app/faq',
+    url: 'https://diar-construction.vercel.app/faq',
     siteName: 'شركة ديار الإعمار',
     type: 'website',
     locale: 'ar_SA',

@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: 'https://diar-aleamar.vercel.app/',
+    canonical: 'https://diar-construction.vercel.app/',
   },
 }
 

@@ -15,13 +15,13 @@ export const metadata: Metadata = {
     'Free Consultation',
   ],
   alternates: {
-    canonical: 'https://diar-aleamar.vercel.app/contact',
+    canonical: 'https://diar-construction.vercel.app/contact',
   },
   openGraph: {
     title: 'Contact Us | Diar Al-Emaar Construction Company',
     description:
       'Contact us for a free consultation or to learn more about our construction and contracting services.',
-    url: 'https://diar-aleamar.vercel.app/contact',
+    url: 'https://diar-construction.vercel.app/contact',
     siteName: 'Diar Al-Emaar Construction Company',
     type: 'website',
     locale: 'en_US',
@@ -134,11 +134,11 @@ export default function ContactPage() {
             name: 'Contact Us | Diar Al-Emaar Construction Company',
             description:
               'Contact us for a free consultation or to learn more about our construction and contracting services.',
-            url: 'https://diar-aleamar.vercel.app/contact',
+            url: 'https://diar-construction.vercel.app/contact',
             publisher: {
               '@type': 'Organization',
               name: 'Diar Al-Emaar Construction Company',
-              url: 'https://diar-aleamar.vercel.app',
+              url: 'https://diar-construction.vercel.app',
             },
             mainEntity: {
               '@type': 'Organization',

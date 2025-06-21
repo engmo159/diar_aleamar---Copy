@@ -32,12 +32,12 @@ export async function generateMetadata({
       project.location || '',
     ],
     alternates: {
-      canonical: `https://diar-aleamar.vercel.app/projects/${slug}`,
+      canonical: `https://diar-construction.vercel.app/projects/${slug}`,
     },
     openGraph: {
       title: `${project.title} | Diar Aleamar`,
       description: project.description,
-      url: `https://diar-aleamar.vercel.app/projects/${slug}`,
+      url: `https://diar-construction.vercel.app/projects/${slug}`,
       siteName: 'Diar Aleamar',
       type: 'article',
       locale: 'ar_SA',
@@ -159,7 +159,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             completionDate: project.completionDate,
             location: project.location,
             client: project.client,
-            url: `https://diar-aleamar.vercel.app/projects/${slug}`,
+            url: `https://diar-construction.vercel.app/projects/${slug}`,
           }),
         }}
       />

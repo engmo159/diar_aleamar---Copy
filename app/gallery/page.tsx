@@ -16,13 +16,13 @@ export const metadata: Metadata = {
     'مقاولات عامة',
   ],
   alternates: {
-    canonical: 'https://diar-aleamar.vercel.app/gallery',
+    canonical: 'https://diar-construction.vercel.app/gallery',
   },
   openGraph: {
     title: 'معرض الأعمال | شركة ديار الإعمار',
     description:
       'تصفح معرض أعمالنا في مجال المقاولات والبناء. اكتشف مشاريعنا السابقة وأعمالنا المميزة.',
-    url: 'https://diar-aleamar.vercel.app/gallery',
+    url: 'https://diar-construction.vercel.app/gallery',
     siteName: 'شركة ديار الإعمار',
     type: 'website',
     locale: 'ar_SA',
@@ -105,11 +105,11 @@ export default function GalleryPage() {
             name: 'معرض الأعمال | شركة ديار الإعمار',
             description:
               'تصفح معرض أعمالنا في مجال المقاولات والبناء. اكتشف مشاريعنا السابقة وأعمالنا المميزة.',
-            url: 'https://diar-aleamar.vercel.app/gallery',
+            url: 'https://diar-construction.vercel.app/gallery',
             publisher: {
               '@type': 'Organization',
               name: 'شركة ديار الإعمار',
-              url: 'https://diar-aleamar.vercel.app',
+              url: 'https://diar-construction.vercel.app',
             },
             mainEntity: {
               '@type': 'ItemList',
@@ -121,7 +121,7 @@ export default function GalleryPage() {
                   name: project.title,
                   description: project.description,
                   image: project.image,
-                  url: `https://diar-aleamar.vercel.app${project.link}`,
+                  url: `https://diar-construction.vercel.app${project.link}`,
                 },
               })),
             },

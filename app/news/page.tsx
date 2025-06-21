@@ -17,13 +17,13 @@ export const metadata: Metadata = {
     'إنشاءات',
   ],
   alternates: {
-    canonical: 'https://diar-aleamar.vercel.app/news',
+    canonical: 'https://diar-construction.vercel.app/news',
   },
   openGraph: {
     title: 'الأخبار | شركة ديار الإعمار',
     description:
       'آخر الأخبار والتحديثات عن مشاريع شركة ديار الإعمار في المملكة العربية السعودية.',
-    url: 'https://diar-aleamar.vercel.app/news',
+    url: 'https://diar-construction.vercel.app/news',
     siteName: 'شركة ديار الإعمار',
     type: 'website',
     locale: 'ar_SA',

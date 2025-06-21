@@ -15,13 +15,13 @@ export const metadata: Metadata = {
     'شركة ديار الإعمار',
   ],
   alternates: {
-    canonical: 'https://diar-aleamar.vercel.app/services',
+    canonical: 'https://diar-construction.vercel.app/services',
   },
   openGraph: {
     title: 'خدماتنا | شركة ديار الإعمار',
     description:
       'نقدم مجموعة شاملة من خدمات المقاولات العامة والبناء في المملكة العربية السعودية.',
-    url: 'https://diar-aleamar.vercel.app/services',
+    url: 'https://diar-construction.vercel.app/services',
     siteName: 'شركة ديار الإعمار',
     type: 'website',
     locale: 'ar_SA',
@@ -114,7 +114,7 @@ const ServicesPage = () => {
                 '@type': 'Service',
                 name: service.title,
                 description: service.description,
-                url: `https://diar-aleamar.vercel.app/services/${service.slug}`,
+                url: `https://diar-construction.vercel.app/services/${service.slug}`,
               },
             })),
           }),

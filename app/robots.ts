@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/admin/', '/api/'],
       },
     ],
-    sitemap: 'https://diar-aleamar.vercel.app/sitemap5.xml',
+    sitemap: 'https://diar-construction.vercel.app/sitemap.xml',
   }
 }

@@ -13,11 +13,11 @@ export function generateMetadata({
   title,
   description,
   keywords = [],
-  ogImage = 'https://diar-aleamar.vercel.app/og-image.jpg',
+  ogImage = 'https://diar-construction.vercel.app/og-image.jpg',
   path,
   type = 'website',
 }: GenerateMetadataProps): Metadata {
-  const baseUrl = 'https://diar-aleamar.vercel.app'
+  const baseUrl = 'https://diar-construction.vercel.app'
   const url = `${baseUrl}${path}`
 
   return {
