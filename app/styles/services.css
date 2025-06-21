@@ -1,0 +1,125 @@
+/* Service page specific styles */
+.serviceContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  padding-bottom: 2rem; /* Added space at the bottom */
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+  .servicesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .servicesGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1280px) {
+  .servicesGrid {
+    grid-template-columns: repeat(4, 1fr); /* Four columns for large screens */
+  }
+}
+
+.serviceIcon {
+  height: 2rem;
+  width: 2rem;
+  min-height: 1.5rem; /* For smaller devices */
+  min-width: 1.5rem;
+}
+
+/* Section: Approach */
+.serviceApproach {
+  margin-top: 6rem;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.serviceApproach h1 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #1f2937;
+}
+
+.approachParagraph {
+  margin-bottom: 1.5rem;
+  color: #4b5563;
+  font-size: 1rem;
+  line-height: 1.75rem;
+}
+
+.approachParagraph:last-child {
+  margin-bottom: 0;
+}
+
+/* Dark mode styles */
+.dark .serviceApproach {
+  background-color: #1f2937;
+  color: #f3f4f6;
+}
+
+.dark .serviceApproach h1 {
+  color: #f9fafb;
+}
+
+.dark .approachParagraph {
+  color: #d1d5db;
+}
+
+/* Faded separator */
+hr {
+  border-top: 2px solid #e5e7eb;
+  margin: 2rem auto;
+  width: 80%;
+}
+
+/* For dark mode */
+.dark hr {
+  border-top: 2px solid #4b5563;
+}
+
+/* Hover effect on cards */
+.serviceCard {
+  transition: all 0.3s ease;
+}
+
+.serviceCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  background-color: #f3f4f6; /* Light background on hover */
+}
+
+.dark .serviceCard:hover {
+  background-color: #374151; /* Darker background on hover in dark mode */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Service cards background on hover in light mode */
+.serviceCard:hover {
+  background-color: #f9fafb;
+}
+
+/* Adjust the font size for cards */
+.serviceCardTitle {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* Card content spacing */
+.serviceCardContent {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  color: #4b5563;
+}

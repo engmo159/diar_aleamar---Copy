@@ -1,0 +1,188 @@
+/* Reset and base styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-primary: #fbbf24;
+  --color-primary-dark: #f59e0b;
+  --color-secondary: #1e3a8a;
+  --color-secondary-dark: #1e3a8a;
+  --color-background: #ffffff;
+  --color-foreground: #111827;
+  --color-muted: #f3f4f6;
+  --color-muted-foreground: #6b7280;
+  --color-border: #e5e7eb;
+  --color-card: #ffffff;
+  --color-card-foreground: #111827;
+}
+
+html[data-theme='dark'] {
+  --color-primary: #fbbf24;
+  --color-primary-dark: #f59e0b;
+  --color-secondary: #1e3a8a;
+  --color-secondary-dark: #1e3a8a;
+  --color-background: #111827;
+  --color-foreground: #f9fafb;
+  --color-muted: #1f2937;
+  --color-muted-foreground: #9ca3af;
+  --color-border: #374151;
+  --color-card: #1f2937;
+  --color-card-foreground: #f9fafb;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+html[dir='rtl'] body {
+  font-family: 'Cairo', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Spacing utilities */
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mt-12 {
+  margin-top: 3rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+/* Text utilities */
+.text-center {
+  text-align: center;
+}
+
+/* RTL Support */
+html[dir='rtl'] .rtl-flip {
+  transform: scaleX(-1);
+}
+
+/* Dark mode toggle class - will be added to the html element */
+.dark {
+  color-scheme: dark;
+}
+
+/* Flexbox and Grid utilities */
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+/* Responsive design breakpoints */
+@media (min-width: 640px) {
+  .sm\:text-left {
+    text-align: left;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:flex-row {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:block {
+    display: block;
+  }
+}
+
+/* Accessibility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Import chart component styles */
+/* @import './components/chart.css'; */

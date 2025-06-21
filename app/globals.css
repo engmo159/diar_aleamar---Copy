@@ -1,0 +1,350 @@
+@import './styles/components/chart.css';
+@import './styles/components/pageHeader.css';
+@import './styles/components/sectionHeader.css';
+@import './styles/main.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Import chart component styles */
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 45 100% 58%;
+    --primary-foreground: 0 0% 10%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 20% 10%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 20% 8%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 20% 9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 45 100% 58%;
+    --primary-foreground: 0 0% 10%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+html[dir='rtl'] {
+  font-family: 'Cairo', sans-serif;
+}
+
+html[dir='ltr'] {
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero-diagonal {
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+}
+
+.rtl-flip {
+  transform: scaleX(-1);
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Reset and base styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-primary: #fbbf24;
+  --color-primary-dark: #f59e0b;
+  --color-secondary: #1e3a8a;
+  --color-secondary-dark: #1e3a8a;
+  --color-background: #ffffff;
+  --color-foreground: #111827;
+  --color-muted: #f3f4f6;
+  --color-muted-foreground: #6b7280;
+  --color-border: #e5e7eb;
+  --color-card: #ffffff;
+  --color-card-foreground: #111827;
+}
+
+html[data-theme='dark'] {
+  --color-primary: #fbbf24;
+  --color-primary-dark: #f59e0b;
+  --color-secondary: #1e3a8a;
+  --color-secondary-dark: #1e3a8a;
+  --color-background: #111827;
+  --color-foreground: #f9fafb;
+  --color-muted: #1f2937;
+  --color-muted-foreground: #9ca3af;
+  --color-border: #374151;
+  --color-card: #1f2937;
+  --color-card-foreground: #f9fafb;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+html[dir='rtl'] body {
+  font-family: 'Cairo', sans-serif;
+}
+
+.font-arabic {
+  font-family: 'Cairo', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  /* max-width: 1200px; */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Spacing utilities */
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mt-12 {
+  margin-top: 3rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+/* Text utilities */
+.text-center {
+  text-align: center;
+}
+
+/* RTL Support */
+html[dir='rtl'] .rtl-flip {
+  transform: scaleX(-1);
+}
+
+/* Dark mode toggle class - will be added to the html element */
+.dark {
+  color-scheme: dark;
+}
+
+/* Flexbox and Grid utilities */
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+/* Responsive design breakpoints */
+@media (min-width: 640px) {
+  .sm\:text-left {
+    text-align: left;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:flex-row {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:block {
+    display: block;
+  }
+}
+
+/* Accessibility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

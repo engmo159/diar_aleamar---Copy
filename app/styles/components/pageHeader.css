@@ -1,0 +1,79 @@
+
+.page-header {
+  position: relative;
+  background-color: #1e3a8a;
+  padding: 4rem 0 6rem;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.page-header-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: black;
+  opacity: 0.7;
+  z-index: 0;
+}
+
+.page-header-accent {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.5rem;
+  background-color: #fbbf24;
+  z-index: 1;
+}
+
+.page-header-content {
+  position: relative;
+  z-index: 10;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.page-header-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.page-header-breadcrumbs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  color: #d1d5db;
+}
+
+.page-header-breadcrumbs.rtl {
+  flex-direction: row-reverse;
+}
+
+.breadcrumb-link {
+  color: #d1d5db;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.breadcrumb-link:hover {
+  color: #fbbf24;
+}
+
+.breadcrumb-separator {
+  color: #d1d5db;
+}
+
+@media (min-width: 768px) {
+  .page-header {
+    padding: 6rem 0 8rem;
+  }
+  
+  .page-header-title {
+    font-size: 3rem;
+  }
+}

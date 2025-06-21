@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"]
+    },
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "target": "ESNext",
+    "jsx": "preserve",
+    "skipLibCheck": true,
+    "strict": true,
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "noEmit": true,
+    "incremental": true,
+    "isolatedModules": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    "app/**/*.ts",
+    "scripts/*.ts",
+    "lib/*.ts",
+    "hooks/*.ts",
+    "scripts/*.ts",
+    ".next/types/**/*.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "next-sitemap.js",
+    "app/data/services.tsx"
+  ],
+  "exclude": ["node_modules"]
+}
