@@ -16,29 +16,29 @@ export async function generateMetadata({
 
   if (!project) {
     return {
-      title: 'Project Not Found | Diar Aleamar',
-      description: 'The requested project could not be found.',
+      title: 'مشروع غير موجود | شركة ديار الإعمار',
+      description: 'المشروع المطلوب غير موجود.',
     }
   }
 
   return {
-    title: `${project.title} | Diar Aleamar`,
+    title: `${project.title} | شركة ديار الإعمار`,
     description: project.description,
     keywords: [
       project.category,
-      'construction',
-      'projects',
-      'Diar Aleamar',
+      'مقاولات',
+      'مشاريع',
+      'شركة ديار الإعمار',
       project.location || '',
     ],
     alternates: {
       canonical: `https://diar-construction.vercel.app/projects/${slug}`,
     },
     openGraph: {
-      title: `${project.title} | Diar Aleamar`,
+      title: `${project.title} | شركة ديار الإعمار`,
       description: project.description,
       url: `https://diar-construction.vercel.app/projects/${slug}`,
-      siteName: 'Diar Aleamar',
+      siteName: 'شركة ديار الإعمار',
       type: 'article',
       locale: 'ar_SA',
       images: [
@@ -165,4 +165,10 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
       />
     </>
   )
+}
+
+export async function generateStaticParams() {
+  return projects.map(project => ({
+    slug: project.link.replace('/projects/', ''),
+  }))
 }

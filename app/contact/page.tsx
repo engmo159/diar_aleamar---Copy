@@ -5,26 +5,21 @@ import Link from 'next/link'
 import ContactForm from '../components/ContactForm'
 
 export const metadata: Metadata = {
-  title: 'Contact Us | Diar Al-Emaar Construction Company',
+  title: 'اتصل بنا | شركة ديار الإعمار',
   description:
-    'Contact us for a free consultation or to learn more about our construction and contracting services.',
-  keywords: [
-    'Contact Us',
-    'Diar Al-Emaar',
-    'General Contracting',
-    'Free Consultation',
-  ],
+    'تواصل معنا للحصول على استشارة مجانية أو لمعرفة المزيد عن خدمات البناء والمقاولات العامة.',
+  keywords: ['اتصل بنا', 'شركة ديار الإعمار', 'مقاولات عامة', 'استشارة مجانية'],
   alternates: {
     canonical: 'https://diar-construction.vercel.app/contact',
   },
   openGraph: {
-    title: 'Contact Us | Diar Al-Emaar Construction Company',
+    title: 'اتصل بنا | شركة ديار الإعمار',
     description:
-      'Contact us for a free consultation or to learn more about our construction and contracting services.',
+      'تواصل معنا للحصول على استشارة مجانية أو لمعرفة المزيد عن خدمات البناء والمقاولات العامة.',
     url: 'https://diar-construction.vercel.app/contact',
-    siteName: 'Diar Al-Emaar Construction Company',
+    siteName: 'شركة ديار الإعمار',
     type: 'website',
-    locale: 'en_US',
+    locale: 'ar_SA',
   },
 }
 
@@ -32,10 +27,10 @@ export default function ContactPage() {
   return (
     <>
       <PageHeader
-        title='Contact Us'
+        title='اتصل بنا'
         breadcrumbs={[
-          { label: 'Home', path: '/' },
-          { label: 'Contact Us', path: '/contact' },
+          { label: 'الرئيسية', path: '/' },
+          { label: 'اتصل بنا', path: '/contact' },
         ]}
       />
 

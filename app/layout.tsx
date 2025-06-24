@@ -4,7 +4,6 @@ import ClientLayout from './ClientLayout'
 import { Metadata } from 'next'
 import Head from 'next/head'
 import { Analytics } from '@vercel/analytics/react'
-import { cookies } from 'next/headers'
 
 const cairo = Cairo({
   variable: '--font-cairo',
@@ -38,29 +37,13 @@ export const metadata: Metadata = {
   },
 }
 
-async function getTheme() {
-  const cookieStore = await cookies()
-  const themeCookie = cookieStore.get('theme')
-  return themeCookie?.value || 'light'
-}
-
-export default async function RootLayout({
+export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
-  const theme = await getTheme()
-
   return (
-    <html
-      lang='ar'
-      dir='rtl'
-      suppressHydrationWarning
-      className={theme === 'dark' ? 'dark' : ''}
-      style={{
-        colorScheme: theme,
-      }}
-    >
+    <html lang='ar' dir='rtl' suppressHydrationWarning>
       <Head>
         <link rel='icon' href='/favicon.ico' sizes='16x16' />
         <link rel='icon' href='/favicon-32x32.ico' sizes='32x32' />
@@ -83,10 +66,7 @@ export default async function RootLayout({
           href='/android-chrome-512x512.png'
           sizes='512x512'
         />
-        <meta
-          name='theme-color'
-          content={theme === 'dark' ? '#000000' : '#ffffff'}
-        />
+        <meta name='theme-color' content={'#ffffff'} />
       </Head>
 
       <body className={`${cairo.variable} font-cairo`} suppressHydrationWarning>
