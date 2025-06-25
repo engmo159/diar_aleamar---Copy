@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     'تواصل معنا للحصول على استشارة مجانية أو لمعرفة المزيد عن خدمات البناء والمقاولات العامة.',
   keywords: ['اتصل بنا', 'شركة ديار الإعمار', 'مقاولات عامة', 'استشارة مجانية'],
   alternates: {
-    canonical: 'https://diar-construction.vercel.app/contact',
+    canonical: 'https://diarconstruction.netlify.app/contact',
   },
   openGraph: {
     title: 'اتصل بنا | شركة ديار الإعمار',

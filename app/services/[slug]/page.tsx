@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       service.field === 'engineering' ? 'مقاولات' : 'خدمات رقمية',
     ],
     alternates: {
-      canonical: `https://diar-construction.vercel.app/services/${slug}`,
+      canonical: `https://diarconstruction.netlify.app/services/${slug}`,
     },
     openGraph: {
       title: `${service.title} | شركة ديار الإعمار`,
@@ -177,7 +177,7 @@ const ServicePage = async ({ params }: Props) => {
               '@type': 'Place',
               name: 'المملكة العربية السعودية',
             },
-            mainEntityOfPage: `https://diar-construction.vercel.app/services/${service.slug}`,
+            mainEntityOfPage: `https://diarconstruction.netlify.app/services/${service.slug}`,
           }),
         }}
       />

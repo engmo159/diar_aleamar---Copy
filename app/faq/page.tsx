@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     'استفسارات',
   ],
   alternates: {
-    canonical: 'https://diar-construction.vercel.app/faq',
+    canonical: 'https://diarconstruction.netlify.app/faq',
   },
   openGraph: {
     title: 'الأسئلة الشائعة | شركة ديار الإعمار',

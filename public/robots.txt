@@ -3,4 +3,4 @@ Allow: /
 Disallow: /admin/
 Disallow: /api/
 
-Sitemap: https://diar-construction.vercel.app/sitemap.xml 
+Sitemap: https://diarconstruction.netlify.app/sitemap.xml 

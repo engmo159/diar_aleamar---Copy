@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     'مقاولات عامة',
   ],
   alternates: {
-    canonical: 'https://diar-construction.vercel.app/gallery',
+    canonical: 'https://diarconstruction.netlify.app/gallery',
   },
   openGraph: {
     title: 'معرض الأعمال | شركة ديار الإعمار',

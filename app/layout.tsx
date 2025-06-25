@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: 'https://diar-construction.vercel.app/',
+    canonical: 'https://diarconstruction.netlify.app/',
   },
 }
 

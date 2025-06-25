@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     'شركة إنشاءات',
   ],
   alternates: {
-    canonical: 'https://diar-construction.vercel.app/about',
+    canonical: 'https://diarconstruction.netlify.app/about',
   },
   openGraph: {
     title: 'من نحن | شركة ديار الإعمار',
