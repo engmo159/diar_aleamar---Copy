@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: 'اتصل بنا | شركة ديار الإعمار',
     description:
       'تواصل معنا للحصول على استشارة مجانية أو لمعرفة المزيد عن خدمات البناء والمقاولات العامة.',
-    url: 'https://diar-construction.vercel.app/contact',
+    url: 'https://diarconstruction.netlify.app/contact',
     siteName: 'شركة ديار الإعمار',
     type: 'website',
     locale: 'ar_SA',
@@ -129,11 +129,11 @@ export default function ContactPage() {
             name: 'Contact Us | Diar Al-Emaar Construction Company',
             description:
               'Contact us for a free consultation or to learn more about our construction and contracting services.',
-            url: 'https://diar-construction.vercel.app/contact',
+            url: 'https://diarconstruction.netlify.app/contact',
             publisher: {
               '@type': 'Organization',
               name: 'Diar Al-Emaar Construction Company',
-              url: 'https://diar-construction.vercel.app',
+              url: 'https://diarconstruction.netlify.app',
             },
             mainEntity: {
               '@type': 'Organization',

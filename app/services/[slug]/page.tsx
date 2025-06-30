@@ -36,7 +36,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: `${service.title} | شركة ديار الإعمار`,
       description: service.description,
-      url: `https://diar-construction.vercel.app/services/${slug}`,
+      url: `https://diarconstruction.netlify.app/services/${slug}`,
       siteName: 'شركة ديار الإعمار',
       type: 'website',
       locale: 'ar_SA',
@@ -171,7 +171,7 @@ const ServicePage = async ({ params }: Props) => {
             provider: {
               '@type': 'Organization',
               name: 'شركة ديار الإعمار',
-              url: 'https://diar-construction.vercel.app',
+              url: 'https://diarconstruction.netlify.app',
             },
             areaServed: {
               '@type': 'Place',

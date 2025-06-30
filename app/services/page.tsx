@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     title: 'خدماتنا | شركة ديار الإعمار',
     description:
       'نقدم مجموعة شاملة من خدمات المقاولات العامة والبناء في المملكة العربية السعودية.',
-    url: 'https://diar-construction.vercel.app/services',
+    url: 'https://diarconstruction.netlify.app/services',
     siteName: 'شركة ديار الإعمار',
     type: 'website',
     locale: 'ar_SA',
@@ -114,7 +114,7 @@ const ServicesPage = () => {
                 '@type': 'Service',
                 name: service.title,
                 description: service.description,
-                url: `https://diar-construction.vercel.app/services/${service.slug}`,
+                url: `https://diarconstruction.netlify.app/services/${service.slug}`,
               },
             })),
           }),

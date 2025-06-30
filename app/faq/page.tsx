@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     title: 'الأسئلة الشائعة | شركة ديار الإعمار',
     description:
       'إجابات على الأسئلة الشائعة حول خدماتنا في مجال المقاولات والبناء. تعرف على المزيد عن شركة ديار الإعمار.',
-    url: 'https://diar-construction.vercel.app/faq',
+    url: 'https://diarconstruction.netlify.app/faq',
     siteName: 'شركة ديار الإعمار',
     type: 'website',
     locale: 'ar_SA',

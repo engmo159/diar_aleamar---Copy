@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     title: 'معرض الأعمال | شركة ديار الإعمار',
     description:
       'تصفح معرض أعمالنا في مجال المقاولات والبناء. اكتشف مشاريعنا السابقة وأعمالنا المميزة.',
-    url: 'https://diar-construction.vercel.app/gallery',
+    url: 'https://diarconstruction.netlify.app/gallery',
     siteName: 'شركة ديار الإعمار',
     type: 'website',
     locale: 'ar_SA',
@@ -105,11 +105,11 @@ export default function GalleryPage() {
             name: 'معرض الأعمال | شركة ديار الإعمار',
             description:
               'تصفح معرض أعمالنا في مجال المقاولات والبناء. اكتشف مشاريعنا السابقة وأعمالنا المميزة.',
-            url: 'https://diar-construction.vercel.app/gallery',
+            url: 'https://diarconstruction.netlify.app/gallery',
             publisher: {
               '@type': 'Organization',
               name: 'شركة ديار الإعمار',
-              url: 'https://diar-construction.vercel.app',
+              url: 'https://diarconstruction.netlify.app',
             },
             mainEntity: {
               '@type': 'ItemList',
@@ -121,7 +121,7 @@ export default function GalleryPage() {
                   name: project.title,
                   description: project.description,
                   image: project.image,
-                  url: `https://diar-construction.vercel.app${project.link}`,
+                  url: `https://diarconstruction.netlify.app${project.link}`,
                 },
               })),
             },

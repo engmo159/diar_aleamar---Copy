@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title: 'الأخبار | شركة ديار الإعمار',
     description:
       'آخر الأخبار والتحديثات عن مشاريع شركة ديار الإعمار في المملكة العربية السعودية.',
-    url: 'https://diar-construction.vercel.app/news',
+    url: 'https://diarconstruction.netlify.app/news',
     siteName: 'شركة ديار الإعمار',
     type: 'website',
     locale: 'ar_SA',

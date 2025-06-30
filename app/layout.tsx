@@ -24,6 +24,7 @@ export const metadata: Metadata = {
       'شركة مقاولات تعمل بالمملكة العربية السعودية المدينة المنورة متخصصة في خدمات البناء والمقاولات العامة وتنفيذ المشاريع بأعلى جودة في المملكة العربية السعودية المدينة المنورة.',
     locale: 'ar_SA',
     type: 'website',
+    url: 'https://diarconstruction.netlify.app/',
     images: [
       {
         url: 'https://res.cloudinary.com/dqj1vjrxu/image/upload/f_auto,q_auto/khn0dbra3ghhotdrqp6t',
